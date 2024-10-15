@@ -1,0 +1,115 @@
+.parent {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-image: url('data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBxISEhUQDxIVFRUVFRUVFRUVFQ8VFRUPFRUWFhUVFRUYHSggGBolHRUVITEhJSkrLi4uFx8zODMtNygtLisBCgoKDQ0NDw8PFSsZFRkrKysrKy0tKzcrKy0rLTctKysrNzcrKy0tKy0tLS0tKystLSsrKysrKysrKysrKystK//AABEIAJ8BPgMBIgACEQEDEQH/xAAYAAEBAQEBAAAAAAAAAAAAAAABAgADB//EABgQAQEBAQEAAAAAAAAAAAAAAAABEQIS/8QAFwEBAQEBAAAAAAAAAAAAAAAAAQIAA//EABYRAQEBAAAAAAAAAAAAAAAAAAABEf/aAAwDAQACEQMRAD8A8SjYxi0MWYsxaEgxmkMMSxaKUBISTg0SN5MipDg1MisNBwDy2LkOHBqZGXIMbG0YMXQwTYMNAULBVUCmJFUAUhWCgoGKCVJrKZmTjEUEUEUMwOMxBjMzEgkMoQwhoWhIMpgioYkkQ4oGQsVJZjDCNaQ4YcODUyNisbGxtGJxeNjYNc7BIsYMVqbE2OmJFMqbE4ujAYhNXU1NVEpq8CcKWpooUGtZmYAgEMzAtGZmZTAkMqCGEExpDIQVJilRLKgVFRNYxpVYpLYY0JkGqkONFKiKkyGQw4NTg8rZsOud5EjoBh1z6TXTE2JsOosRXWxzsFiomheCxOK1zoq6mpqkWBVGJqokswIxKhQUthwAmEQkMcaMQTKCQqGRpCpNOGAkGKSqFNKoIcVBTIqRovmLkRa0hkMVipEWtjY0VFBGNY64LGwa5CxdgwYrXO8px1xPSbFSuSa6VGosVEVFdLEVNXBibFUVNVEYmqoTVCJqqmpVAKWBFBAJZoxBZmZjFRMUQqKRTFRNizKmKiomrwyBXK4imRUjGKxNMi+Y0VIuRFrRYkaKRVY2NFWKAalmCMFWjoVUSjqL1PXSaqOdiV2p1zq4jpFV0mprpEim1NRVQJNCaqCpqqEqSxqaC1gOjQWILAszFjCFYYDDIFRUSVJi1RJi4mGVSKpaIuLiarl0iIrlcc66csOVatJMTraUqrJrWtrY1qaLQm1Ug6c+qvqotRVwamm1NqVjqufSuqioq4E00IXALSKKQmqCVJoVQCBSATGYwhjIx1g0ik6dUDFSJMIVFROnVRKpVSoioRVyrjnyvmriKqV05c4vlcRV6UKlVqMXGqZW06MVqbWtGsZGoa1OpMaoq7UVNVE1NirE1NXEVNV0i1FXE6zMlQ1OqSFAKqUkClgRRjVgTraGZlQphIVCmHSFMCQdOpVCFyqlRzTqomrVyiU81SXTmr1z5Mq5UWOsbUa2nU46StqJW062L9NajRra2KbU2to042prUWptMgqbWtRU1chqaaE1SWxmBFiTRoqgDUpLAsCljRAWYFmLQQsymEJSptDFlGJMKVSqiYZVBSpUaqVUoq5TKjTDqcXp1GmHU4uU65ynToxVolGs2thap0em04qpb0LQWqDqbU1UaitrJUBTQCKlSaDAzUJUGOiswatQCzMwJ0gwgkMQSGIVCnTpCjKliFHUmUhbamM2jHSUyo06rRivRQx0Y6QWpnQbWxeptDVtbG0WsNSoprAEVjakFk0gFm1gCKCAWDMCzBgX/9k=');
+  background-size: cover;
+  width: 100%;
+  overflow: hidden;
+}
+
+.login {
+  border: 2px solid white;
+  border-radius: 10px;
+  background-color: transparent;
+  padding: 40px; /* Increased padding for better spacing */
+  margin: 0 auto; /* Center the box horizontally */
+  width: 300px;
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.3), 0 0 40px rgba(0, 120, 255, 0.5); /* Soft highlights */
+  transition: box-shadow 0.3s ease; /* Smooth shadow transition */
+}
+
+.login:hover {
+  box-shadow: 0 0 25px rgba(255, 255, 255, 0.5), 0 0 60px rgba(0, 120, 255, 0.7); /* More pronounced highlights on hover */
+}
+
+.login h2 {
+  font-size: 2em;
+  color: #fff;
+  text-align: center; /* Center the heading */
+  margin-bottom: 40px; /* Space below the heading */
+}
+
+.login .inputBx {
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px; /* Space between input fields */
+}
+
+.login .inputBx input {
+  width: 100%;
+  padding: 14px 20px; /* Increased padding for input fields */
+  background: transparent;
+  border: 2px solid #fff;
+  border-radius: 40px;
+  font-size: 1.2em;
+  color: #fff;
+  box-shadow: none;
+  outline: none;
+  text-align: center;
+}
+
+.login .inputBx input[type="button"] {
+  width: 100%; /* Increased button width */
+  background: linear-gradient(45deg, #ff357a, #fff172);
+  border: none;
+  cursor: pointer;
+  border-radius: 40px; /* Rounded button */
+  transition: background 0.3s ease; /* Smooth background transition */
+}
+
+.login .inputBx input[type="button"]:hover {
+  background: linear-gradient(45deg, #fff172, #ff357a); /* Reverse gradient on hover */
+}
+
+.login .inputBx input::placeholder {
+  color: rgba(255, 255, 255, 0.75);
+}
+
+.login .links {
+  position: relative;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.login .links a {
+  color: #fff;
+  text-decoration: underline;
+  margin-top: 10px; /* Space above link */
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .login {
+    padding: 30px; /* Adjust padding for smaller screens */
+    width: 90%; /* Allow the box to take more width */
+  }
+
+  .login h2 {
+    font-size: 1.5em; /* Reduce heading size */
+  }
+
+  .login .inputBx input {
+    font-size: 1em; /* Adjust input font size */
+  }
+
+  .login .inputBx input[type="button"] {
+    width: 100%; /* Make the button full width */
+    margin-top: 10px; /* Add spacing above the button */
+  }
+}
+
+@media (max-width: 480px) {
+  .login h2 {
+    font-size: 1.3em; /* heading size */
+  }
+
+  .login .inputBx input {
+    font-size: 0.9em; /* input font size */
+  }
+}

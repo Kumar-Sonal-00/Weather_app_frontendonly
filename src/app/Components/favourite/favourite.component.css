@@ -1,0 +1,177 @@
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color:rgb(25, 25, 70);
+  color: white;
+  padding: 20px 30px; /* Increased padding for a larger header */
+  font-family:cursive;
+}
+
+.logo {
+  margin: 0;
+  font-size: 30px; /* Increased font size for the logo */
+  font-weight: bold; /* Make it bold */
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+nav ul li {
+  display: inline;
+  margin-left: 20px; /* Adjusted margin for spacing */
+}
+
+nav ul li:last-child {
+  margin-right: 0; /* Remove right margin for the last item */
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  padding: 10px 15px;
+  border: 2px solid white;
+  border-radius: 5px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+nav ul li a:hover {
+  background-color: white;
+  color: black;
+}
+
+.user-dropdown {
+  position: relative;
+  display: inline-block;
+  cursor: pointer; /* Change cursor to pointer */
+  margin-left: -550px; /* Pull the dropdown closer to the last button */
+}
+
+.user-icon {
+  width: 39px; /* Adjust size of the user icon */
+  height: auto;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  left: -145px; /* Align dropdown to the left */
+  top:42px;
+  background-color: white; /* Background for the dropdown */
+  color: black; /* Text color */
+  min-width: 160px; /* Set a minimum width */
+  border-radius: 5px; /* Rounded corners */
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2); /* Shadow effect */
+  z-index: 1;
+}
+
+.user-dropdown:hover .dropdown-content {
+  display: block; /* Show the dropdown on hover */
+}
+
+.dropdown-content p {
+  margin: 10px; /* Spacing inside the dropdown */
+  font-size: 14px; /* Font size for email */
+}
+
+.dropdown-content a {
+  display: block; /* Make link a block element */
+  color: black; /* Text color for link */
+  text-decoration: none; /* Remove underline */
+  padding: 10px; /* Padding for better spacing */
+}
+
+.dropdown-content a:hover {
+  background-color: #f1f1f1; /* Change background on hover */
+}
+
+.favorites-wrapper {
+  background-image: url('https://th.bing.com/th/id/R.9d0d64a298e3021cefbc7c2f67c481fc?rik=ev2ztqXP1vQg3Q&riu=http%3a%2f%2fimages.unsplash.com%2fphoto-1500740516770-92bd004b996e%3fcrop%3dentropy%26cs%3dtinysrgb%26fit%3dmax%26fm%3djpg%26ixid%3dMnwxMjA3fDB8MXxzZWFyY2h8NHx8Y2xvdWR5JTIwd2VhdGhlcnx8MHx8fHwxNjMzMDY1Mzky%26ixlib%3drb-1.2.1%26q%3d80%26w%3d1080&ehk=n1EmveV5HspeBX7ETW733WGE2fDOyylGLAWoV7wIV6Q%3d&risl=&pid=ImgRaw&r=0');
+  background-size: cover;
+  padding: 20px; /* Optional: Keep padding if you want spacing inside */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow effect */
+  margin: 0; /* Remove margin to eliminate spacing */
+  position: relative; /* Adjust positioning if necessary */
+}
+
+.city-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 columns */
+  gap: 16px; /* Space between cards */
+}
+
+.city-card {
+  background-color: rgba(255, 255, 255, 0.8); /* Similar background to weather cards */
+  padding: 16px;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Shadow for each card */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transition for smooth hover effects */
+}
+
+.city-card:hover {
+  transform: scale(1.05); /* Slight zoom on hover */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); /* Darker shadow on hover */
+}
+
+.remove-button-container {
+  text-align: center; /* Center align the remove button */
+  margin-top: 16px; /* Space above the button */
+}
+
+.favorites-wrapper h3 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 24px; /* Similar font size to weather heading */
+  color: #333; /* Darker text for better readability */
+  font-weight: bold; /* Add bold styling */
+}
+
+.weather-card {
+  padding: 16px;
+  border-radius: 8px; 
+  max-width: 400px; /* Limit card width */
+  width: 100%; /* Full width inside parent */
+  background: rgba(255, 255, 255, 0.8); /* Background similar to favorites card */
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Add subtle shadow for depth */
+}
+
+.weather-info {
+  display: flex;
+  align-items: center;
+}
+
+.weather-icon {
+  width: 100px;
+  height: 100px;
+  margin-right: 16px;
+}
+
+.weather-details p {
+  margin: 0;
+}
+
+button {
+  margin-top: 16px;
+  margin-right: 8px;
+  background-color: #1f4c701a;
+  color: white;
+  cursor: pointer;
+}
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+  .city-grid {
+    grid-template-columns: repeat(auto-fill, minmax(160px, 1fr)); /* Adjust for smaller screens */
+  }
+
+  .city-card {
+    padding: 12px; /* Reduce padding on smaller screens */
+  }
+
+  .favorites-wrapper h3 {
+    font-size: 20px; /* Adjust font size for smaller screens */
+  }
+}

@@ -1,0 +1,26 @@
+<header>
+    <h1 class="logo">Weather App</h1>
+    <nav *ngIf="isLoggedIn==false">
+        <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/login">Login</a></li>
+            <li><a href="/weather-forecast">Weather Forecast</a></li>
+            <li><a href="/favorites">Favorites</a></li>
+        </ul>
+    </nav>
+    <nav *ngIf="isLoggedIn==true">
+        <ul>
+            <li><a href="/profile">Home</a></li>
+            <li><a href="/weather-forecast">Weather Forecast</a></li>
+            <li><a href="/favorites">Favorites</a></li>
+        </ul>
+    </nav>
+    <div class="user-dropdown" *ngIf="isLoggedIn==true">
+        <img src="https://th.bing.com/th/id/OIP.oJNp3GMO4wBds_dhXoWT5AAAAA?rs=1&pid=ImgDetMain" alt="User Icon"
+            class="user-icon" />
+        <div class="dropdown-content">
+            <p>{{userEmail}}</p>
+            <button (click)="logout()">Logout</button>
+        </div>
+    </div>
+</header>

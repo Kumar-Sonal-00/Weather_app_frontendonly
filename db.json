@@ -1,0 +1,66 @@
+{
+  "users": [
+    {
+      "username": "abcd@gmail.com",
+      "password": "12345",
+      "confirmPassword": "12345",
+      "id": "pA1g3Z6"
+    },
+    {
+      "username": "abcde@gmail.com",
+      "password": "123456",
+      "confirmPassword": "123456",
+      "id": "0SWYiDS"
+    },
+    {
+      "username": "sonal@gmail.com",
+      "password": "123",
+      "confirmPassword": "123",
+      "id": "bDPwQWv"
+    },
+    {
+      "id": "3a3e",
+      "username": "ann@gmail.com",
+      "password": "123",
+      "confirmPassword": "123"
+    },
+    {
+      "fullName": "abcdef",
+      "email": "abcd@gmail.com",
+      "password": "123",
+      "confirmPassword": "123",
+      "id": "FHqzjSg"
+    },
+    {
+      "fullName": "Rajeev",
+      "email": "rajeev@gmail.com",
+      "password": "12345",
+      "confirmPassword": "12345",
+      "id": "suzp79j"
+    },
+    {
+      "fullName": "keshav",
+      "email": "keshav@gmail.com",
+      "password": "123456789",
+      "confirmPassword": "123456789",
+      "id": "nHi7jMl"
+    }
+  ],
+  "favourites": [
+    {
+      "city": "Pune",
+      "email": "rajeev@gmail.com",
+      "id": 1
+    },
+    {
+      "city": "purnea",
+      "email": "rajeev@gmail.com",
+      "id": 2
+    },
+    {
+      "city": "jamshedpur",
+      "email": "rajeev@gmail.com",
+      "id": 3
+    }
+  ]
+}

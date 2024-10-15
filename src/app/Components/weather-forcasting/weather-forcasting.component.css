@@ -1,0 +1,190 @@
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color:rgb(25, 25, 70);
+  color: white;
+  padding: 20px 30px; /* Increased padding for a larger header */
+  font-family:cursive;
+}
+
+.logo {
+  margin: 0;
+  font-size: 30px; /* Increased font size for the logo */
+  font-weight: bold; /* Make it bold */
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+nav ul li {
+  display: inline;
+  margin-left: 20px; /* Adjusted margin for spacing */
+}
+
+nav ul li:last-child {
+  margin-right: 0; /* Remove right margin for the last item */
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  padding: 10px 15px;
+  border: 2px solid white;
+  border-radius: 5px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+nav ul li a:hover {
+  background-color: white;
+  color: black;
+}
+
+.user-dropdown {
+  position: relative;
+  display: inline-block;
+  cursor: pointer; /* Change cursor to pointer */
+  margin-left: -550px; /* Pull the dropdown closer to the last button */
+}
+
+.user-icon {
+  width: 39px; /* Adjust size of the user icon */
+  height: auto;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  left: -145px; /* Align dropdown to the left */
+  top:42px;
+  background-color: white; /* Background for the dropdown */
+  color: black; /* Text color */
+  min-width: 160px; /* Set a minimum width */
+  border-radius: 5px; /* Rounded corners */
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2); /* Shadow effect */
+  z-index: 1;
+}
+
+.user-dropdown:hover .dropdown-content {
+  display: block; /* Show the dropdown on hover */
+}
+
+.dropdown-content p {
+  margin: 10px; /* Spacing inside the dropdown */
+  font-size: 14px; /* Font size for email */
+}
+
+.dropdown-content a {
+  display: block; /* Make link a block element */
+  color: black; /* Text color for link */
+  text-decoration: none; /* Remove underline */
+  padding: 10px; /* Padding for better spacing */
+}
+
+.dropdown-content a:hover {
+  background-color: #f1f1f1; /* Change background on hover */
+}
+
+.main {
+  background-image: url('https://th.bing.com/th/id/R.9d0d64a298e3021cefbc7c2f67c481fc?rik=ev2ztqXP1vQg3Q&riu=http%3a%2f%2fimages.unsplash.com%2fphoto-1500740516770-92bd004b996e%3fcrop%3dentropy%26cs%3dtinysrgb%26fit%3dmax%26fm%3djpg%26ixid%3dMnwxMjA3fDB8MXxzZWFyY2h8NHx8Y2xvdWR5JTIwd2VhdGhlcnx8MHx8fHwxNjMzMDY1Mzky%26ixlib%3drb-1.2.1%26q%3d80%26w%3d1080&ehk=n1EmveV5HspeBX7ETW733WGE2fDOyylGLAWoV7wIV6Q%3d&risl=&pid=ImgRaw&r=0');
+  background-size: cover; /* Cover the entire area */
+  background-position: center; /* Center the image */
+  height: 100vh; /* Full viewport height */
+  display: flex; /* Use flexbox for layout */
+  flex-direction: column; /* Stack elements vertically */
+  justify-content: center; /* Center children vertically */
+  align-items: center; /* Center children horizontally */
+}
+
+.weather-container {
+  display: flex;
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  flex: 1; /* Allow to take available space */
+  width: 100%; /* Ensure full width */
+  margin: 0; /* Remove margin */
+}
+
+.weather-card {
+  padding: 0px;
+  border-radius: 8px; 
+  max-width: 400px; /* Limit card width */
+  width: 100%; /* Full width inside parent */
+  background: rgba(255, 255, 255, 0.8);
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Add subtle shadow for depth */
+}
+
+.weather-info {
+  display: flex;
+  align-items: center;
+}
+
+.weather-icon {
+  width: 100px;
+  height: 100px;
+  margin-right: 16px;
+}
+
+.weather-details p {
+  margin: 0;
+}
+
+button {
+  margin-top: 16px;
+  margin-right: 8px;
+  background-color: #1f4c701a; /* Adjust color if needed */
+  color: white;
+  cursor: pointer;
+}
+
+.search-container {
+  display: flex; /* Use flexbox for layout */
+  align-items: center; /* Center align items vertically */
+  margin-top: 10px; /* Optional: space below the search container */
+}
+
+.search-input {
+  flex: 1; /* Allow the input to take available space */
+  margin-right: 20px; /* Space between input and button */
+  width: 250px;
+  height: 65px;
+}
+
+.mat-form-field {
+  width: 80%; /* Ensure the form field takes full width available */
+  height: 56px; /* Set height to match the button */
+  display: flex; /* Use flexbox for layout */
+  align-items: center; /* Center align items vertically */
+}
+
+.search-button {
+  min-width: 100px; /* Set a minimum width for the button */
+  height: 40px; /* Match the height of the input */
+  display: flex; /* Ensures the button can align properly */
+  align-items: center; /* Center content inside button */
+  justify-content: center; /* Center content inside button */
+  padding: 0; /* Remove padding to ensure height consistency */
+  box-sizing: border-box; /* Include padding and border in height/width calculations */
+  margin-bottom:65px;
+  margin-top: 40px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 500px) {
+  .weather-icon {
+    width: 60px;
+    height: 60px;
+  }
+
+  .weather-card {
+    padding: 12px; /* Reduce padding on smaller screens */
+  }
+
+  button {
+    margin-top: 12px; /* Adjust button margin for smaller screens */
+    margin-right: 4px; /* Adjust right margin for smaller screens */
+  }
+}
